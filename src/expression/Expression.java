@@ -2,6 +2,40 @@ package expression;
 
 import java.util.ArrayList;
 
+/*
+Token getToken(Expression exp);
+
+public int evaluate(Expression exp) {
+    Token tok = getToken(exp);
+    switch (tok.type) :
+    case (Token.LPAREN) {
+        exp.isNew = true;
+        exp.value = 0;
+        return evaluate(exp);
+        }
+    case (Token.OPER) {
+        switch (Token.OPER) :
+        case ("*") {
+            exp.value = evaluate(exp) * evaluate(exp);
+            return exp.value;
+            }
+        case ("+") {
+            exp.value = evaluate(exp) + evaluate(exp);
+            return exp.value;
+            }
+    case (Token.NUM) {
+        exp.value = tok.value;
+        return tok.value;
+        }
+    case (Token.RPAREN) {
+        if (exp.isNew) {
+            exp.isNew = false;
+            return exp.value;
+            }
+    }
+
+}
+ */
 public class Expression {
 	private ArrayList<Token> tokens = new ArrayList<Token>();
 	private int value;
